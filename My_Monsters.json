@@ -1,0 +1,459 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "test",
+				"abbreviation": "ELVIS",
+				"full": "My Monsters",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1614961544,
+		"dateLastModified": 1614961544
+	},
+	"monster": [
+		{
+			"name": "The True Halaster Blackcloak",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "test",
+			"page": 310,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"{@item robe of the archmagi}",
+						"{@item ring of protection} +2"
+					]
+				}
+			],
+			"hp": {
+				"formula": "42d6 + 168",
+				"average": 315
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 18,
+			"int": 24,
+			"wis": 18,
+			"cha": 18,
+			"save": {
+				"int": "+14",
+				"wis": "+11",
+				"str": "+3",
+				"dex": "+7",
+				"con": "+7",
+				"cha": "+7"
+			},
+			"skill": {
+				"arcana": "+21",
+				"history": "+21",
+				"perception": "+11"
+			},
+			"senses": [
+				"darkvision 120 ft.",
+				"blindsight 120 ft."
+			],
+			"passive": 21,
+			"resist": [
+				"fire",
+				{
+					"special": "spell damage"
+				},
+				{
+					"resist": [
+						"lightning"
+					],
+					"note": "(granted by the blast scepter, see \"Special Equipment\" below)"
+				}
+			],
+			"languages": [
+				"Abyssal",
+				"Celestial",
+				"Common",
+				"Draconic",
+				"Dwarvish",
+				"Elvish",
+				"Infernal",
+				"Undercommon"
+			],
+			"cr": "23",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Halaster is a 20th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 24}, {@hit 16} to hit with spell attacks). He can cast {@spell disguise self} and {@spell invisibility} at will. He can cast {@spell fly} and {@spell lightning bolt} once each without expending a spell slot, but can't do so again until he finishes a short or long rest. Halaster has the following wizard spells prepared:"
+					],
+					"will": [
+						"{@spell disguise self}, {@spell shield}",
+						"{@spell invisibility}, {@spell misty step}, {@spell counterspell}*"
+					],
+					"daily": {
+						"1e": [
+							"{@spell fly}",
+							"{@spell lightning bolt}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell blade ward}",
+								"{@spell chill touch}",
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell absorb elements|XGE}*",
+								"{@spell mage armor}*",
+								"{@spell magic missile}",
+								"{@spell shield}*",
+								"{@spell silent image}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell cloud of daggers}",
+								"{@spell darkvision}",
+								"{@spell mirror image}**",
+								"{@spell misty step}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell dispel magic}*",
+								"{@spell fireball}",
+								"{@spell slow}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell confusion}",
+								"{@spell fire shield}**",
+								"{@spell Mordenkainen's faithful hound}**",
+								"{@spell Otiluke's resilient sphere}\"",
+								"{@spell polymorph}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Bigby's hand}",
+								"{@spell steel wind strike|XGE}",
+								"{@spell synaptic static|XGE}",
+								"{@spell wall of force}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell chain lightning}",
+								"{@spell eyebite}",
+								"{@spell globe of invulnerability}"
+							],
+							"slots": 3
+						},
+						"7": {
+							"spells": [
+								"{@spell crown of stars|XGE}**",
+								"{@spell finger of death}",
+								"{@spell power word pain|XGE}",
+								"{@spell teleport}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell dark star|EGW}",
+								"{@spell mind blank}**"
+							],
+							"slots": 2
+						},
+						"9": {
+							"spells": [
+								"{@spell meteor swarm}",
+								"{@spell time ravage|EGW}",
+								"{@spell wish}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Halaster wears a robe of eyes that lets him see in all directions, gives him darkvision out to a range of 120 feet, grants advantage on Wisdom (Perception) checks that rely on sight, and allows him to see {@condition invisible} creatures and objects, as well as into the Ethereal Plane, out to a range of 120 feet.",
+						"Halaster wields a blast scepter (a very rare magic item that requires attunement). It can be used as an arcane focus. Whoever is attuned to the blast scepter gains resistance to fire and lightning damage and can, as an action, use it to cast thunderwave as a 4th-level spell (save {@dc 16}) without expending a spell slot.",
+						"Halaster also wears a horned ring (a very rare magic item that requires attunement), which allows an attuned wearer to ignore Undermountain's magical restrictions (see \"Alterations to Magic\")."
+					]
+				},
+				{
+					"name": "Arcane Recovery (1/Day)",
+					"entries": [
+						"When he finishes a short rest, Halaster recovers all his spell slots of 5th level and lower."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Halaster fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"If Halaster dies in Undermountain, he revives after {@dice 1d10} days, with all his hit points and any missing body parts restored. His new body appears in a random safe location in Undermountain."
+					]
+				},
+				{
+					"name": "Improved Abjuration",
+					"entries": [
+						"When Halster casts an abjuration spell that requires you to make an ability check as a part of casting that spell (as in Counterspell and Dispel Magic), he adds his proficiency bonus to that ability check."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Halaster Blackcloak has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Arcane Ward",
+					"entries": [
+						"When Halaster casts an abjuration spell of 1st level or higher, he can simultaneously use a strand of the spell's magic to create a magical ward on himself that lasts until he finishes a long rest. The ward has a hit point maximum equal to twice your wizard level + your Intelligence modifier (47). Whenever you take damage, the ward takes the damage instead. If this damage reduces the ward to 0 hit points, you take any remaining damage.",
+						"While the ward has 0 hit points, it can't absorb damage, but its magic remains. Whenever you cast an abjuration spell of 1st level or higher, the ward regains a number of hit points equal to twice the level of the spell."
+					]
+				},
+				{
+					"name": "Contingency!",
+					"entries": [
+						"When Halaster is reduced to half his hit points or less his contingency spell {@spell Otiluke's resilient sphere} triggers while in the sphere he recasts any buffs as well drinks his potions "
+					]
+				},
+				{
+					"name": "Magic Items",
+					"entries": [
+						"Halaster has the following magic items",
+						"•A vial of {@item oil of slipperiness}  He applies this to himself before the ",
+						"  adventurers reach Area 33",
+						"• 3 {@item potion of greater healing}",
+						"• 2 {@item potion of superior healing}",
+						"• A {@item potion of supreme healing}",
+						"• A {@item dust of sneezing and choking}",
+						"• A {@item bead of force}",
+						"• A {@item gem of brightness}",
+						"• A {@item rope of entanglement}"
+					]
+				},
+				{
+					"name": "Split Mind",
+					"entries": [
+						"Halaster can concentrate on up to 2 spells one of which must be 5th level or lower "
+					]
+				},
+				{
+					"name": "Spell Sniper",
+					"entries": [
+						"When Halaster casts a spell that requires an attack",
+						"roll the spell’s range is doubled and the attacks ignore half and",
+						"three-quarters cover"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Blast Scepter",
+					"entries": [
+						"Halaster uses his blast scepter to cast thunderwave as a 4th-level spell. Each creature in a 15-foot cube originating from him must make a {@dc 16} Constitution saving throw. On a failed save, a creature takes {@dice 5d8} thunder damage and is pushed 10 feet away. On a successful save, the creature takes half as much damage and isn't pushed"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Cast Spell",
+					"entries": [
+						"Halaster casts a spell of 3rd level or lower."
+					]
+				},
+				{
+					"name": "Use Magic Item",
+					"entries": [
+						"Halster uses a magic item that takes an action aside from his blast scepter"
+					]
+				},
+				{
+					"name": "Master of Counterspelling",
+					"entries": [
+						"Halaster casts {@spell counterspell} and his ability to take reactions recharges. "
+					]
+				},
+				{
+					"name": "Spell Ward (Costs 2 Actions)",
+					"entries": [
+						"Halaster expends a spell slot of 4th level or lower and gains 5 temporary hit points per level of the slot."
+					]
+				},
+				{
+					"name": "You shall BLAST!! (Cost 2 Actions)",
+					"entries": [
+						"Halaster uses his Blast Scepter"
+					]
+				},
+				{
+					"name": "Gibbering Madness (Cost 3 Actions)",
+					"entries": [
+						"Halaster projects his madness to all nearby Each creature within 20 feet of him must make a {@dc 20} Wisdom saving throw or suffer {@damage 3d6} psychic damage and the effects of the confusion spell"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Halaster Blackcloak",
+				"source": "WDMM"
+			},
+			"fluff": {
+				"name": "Halaster Blackcloak",
+				"source": "WDMM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"As the master of Undermountain, Halaster can alter the entire dungeon to some extent. His lair actions and regional effects don't extend beyond Undermountain."
+										]
+									},
+									{
+										"type": "section",
+										"entries": [
+											"Halaster, the Mad Mage of Undermountain, is the deranged individual behind most of the traps and horrors found in the great dungeon under Waterdeep. Undermountain is his home, an amusement gallery in which others perform to entertain him.",
+											"The Mad Mage knows the ever-changing ways of Undermountain as no one else does, for he is the one who controls those changes. He prefers to remain unseen, skulking about invisibly or peering through scrying sensors that resemble wide-open eyes surrounded by sparkling motes of light.",
+											"Halaster's abilities far exceed those of most mortal wizards. His expertise with magic gates allows him to travel far and wide to engage in magical research. He spends much of his time creating gates, moving them around, and casting elder runes on them. Halaster's gates connect the different levels of Undermountain, thus enabling him to bring new monsters into the dungeon to replenish those that die or escape. Even as groups of adventurers try to gain decisive control of just a small section of Undermountain's halls, Halaster constantly alters the dungeon's perils to thwart them.",
+											"Halaster's true form is that of a tall, gaunt, male human, but he uses magic to take on many other visages and shapes. No matter what form he wears, the Mad Mage giggles and mutters incessantly. Contrary to appearances, however, Halaster is alert and attentive to the activities and preparations of all beings near him. He never willingly enters combat without first casting mage armor and mind blank on himself."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"On initiative count 20 (losing initiative ties), Halaster takes a lair action to cause one of the following effects:",
+									{
+										"type": "list",
+										"items": [
+											"Halaster targets a volume of unoccupied space or solid stone no larger than four 10-foot cubes within 30 feet of him, turning the open space to solid, worked stone or vice versa.",
+											"Halaster causes one door or archway within 30 feet of him to disappear and be replaced by a blank wall, or he restores a door or an archway previously removed in this way.",
+											"Halaster deactivates or reactivates one of Undermountain's magic gates. The gate must be within 120 feet of him."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Regional Effects",
+								"entries": [
+									"When Halaster is in Undermountain, the following effects can occur in any location within the dungeon or in any extraplanar extension of the dungeon:",
+									{
+										"type": "list",
+										"items": [
+											"A magical scrying sensor appears, taking the form of a ghostly, 1-foot-diameter humanoid eye surrounded by motes of light. The sensor is stationary, though Halaster can reorient the eye to face in any direction. Halaster can see through the eye as though he was in its space. The eye can't be harmed or dispelled, but it winks out within an antimagic field. A scrying eye lasts until Halaster ends the effect (no action required).",
+											"A minor illusory effect is triggered, as though Halaster had cast {@spell minor illusion} in an area. Common illusions include the echo of rattling chains, the distant sound of explosive spells being cast, a dusty cloak or a rusty helm floating as though worn by an invisible figure, and illusory footprints appearing on a dusty floor.",
+											"Silent apparitions of dead adventurers drift through halls and rooms as though they are lost. An apparition can't be harmed, and it doesn't acknowledge creatures or objects in any way. It can't be dispelled but is suppressed within an antimagic field."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/WDMM/Halaster Blackcloak.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/WDMM/Halaster Blackcloak.png?v=1.123.0",
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Rejuvenation"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"CE",
+				"D",
+				"DR",
+				"E",
+				"I",
+				"U"
+			],
+			"damageTags": [
+				"T"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"frightened",
+				"incapacitated",
+				"invisible",
+				"stunned",
+				"unconscious"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	]
+}
